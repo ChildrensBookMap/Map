@@ -61,10 +61,10 @@
           embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
   
           <a-assets>
-              <video src="./assets/mov_bbb.mp4"
-                  preload="auto" id="vid" loop
+              <a-image src="./assets/Overlay.png"
+                  preload="auto" id="my-image" loop
                   crossorigin webkit-playsinline autoplay muted playsinline controls>
-              </video>
+              </a-image>
           </a-assets>
   
           <a-nft
@@ -74,14 +74,14 @@
                 
               smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
           >
-              <a-video
-                  src="#vid"
+              <a-image
+                  src="#my-image"
                   position='50 150 -100'
                   rotation='90 0 180'
                   width='300'
                   height='175'
                   >
-              </a-video>
+              </a-image>
           </a-nft>
       <a-entity camera></a-entity>
     </a-scene>
