@@ -61,25 +61,26 @@
           embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
   
           <a-assets>
-              <img src="./Map (overlay).png"
+              <video src="./assets/mov_bbb.mp4"
                   preload="auto" id="vid" loop
                   crossorigin webkit-playsinline autoplay muted playsinline controls>
-              </img>
+              </video>
           </a-assets>
   
           <a-nft
               videohandler
-              type='nft' url='https://github.com/ChildrensBookMap/Map/blob/mapnft'
+              type='nft' url='https://rawcdn.githack.com/saxani/phone-trigger-tutorial/36828f5e91c12a0d51ce8656a80d33a09c70b00d/assets/pinball'
+                
               smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
           >
-              <a-img
+              <a-video
                   src="#vid"
                   position='50 150 -100'
                   rotation='90 0 180'
                   width='300'
                   height='175'
                   >
-              </a-img>
+              </a-video>
           </a-nft>
       <a-entity camera></a-entity>
     </a-scene>
